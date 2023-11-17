@@ -14,13 +14,15 @@
         tools:targetApi="31">
         <activity
             android:name=".Registrar_Usuario"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Firebase_Autentificacion"/>
         <activity
             android:name=".Login_Usuario"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".Firebase_Autentificacion"
+            android:exported="true"
+            android:parentActivityName=".Firebase_Autentificacion">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -15,6 +15,7 @@ public class Firebase_Autentificacion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase_autentificacion);
 
+
         btn_login = findViewById(R.id.btlogin);
         btn_registrar = findViewById(R.id.btregistrar);
 
