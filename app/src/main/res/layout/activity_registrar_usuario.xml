@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registrar_Usuario">
+
+    <TextView
+        android:id="@+id/tv_registro"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:text="Datos del nuevo Contacto"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:ems="10"
+        android:hint="Ponga su email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etxtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:hint="Ponga su contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btregistro"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="Registrar" />
+
+    <TextView
+        android:id="@+id/tv_registroCofirmado"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        />
+</LinearLayout>
