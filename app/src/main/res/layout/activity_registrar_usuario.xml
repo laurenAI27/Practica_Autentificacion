@@ -39,7 +39,8 @@
         android:id="@+id/btregistro"
         android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:text="Registrar" />
+        android:text="Registrar"
+        android:textSize="16dp"/>
 
     <TextView
         android:id="@+id/tv_registroCofirmado"

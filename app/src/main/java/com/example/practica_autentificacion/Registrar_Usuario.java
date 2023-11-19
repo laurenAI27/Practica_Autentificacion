@@ -29,13 +29,18 @@ public class Registrar_Usuario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar_usuario);
+
+        getSupportActionBar().setTitle("Firebase Lauren");
+
         btn_registro = findViewById(R.id.btregistro);
         etxt_mail = findViewById(R.id.etxtEmailAddress);
         etxt_password = findViewById(R.id.etxtPassword);
         tv_confirmacionUsuario = findViewById(R.id.tv_registroCofirmado);
 
         btn_registro.setOnClickListener(view -> {
-
+            String email = etxt_mail.getText().toString();
+            String password = etxt_password.getText().toString();
+            createAccount(email, password);
         });
     }
     private void createAccount(String email, String password) {

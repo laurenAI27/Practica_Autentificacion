@@ -23,12 +23,14 @@
         android:id="@+id/btlogin"
         android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:text="Login" />
+        android:text="Login"
+        android:textSize="16dp"/>
 
     <Button
         android:id="@+id/btregistrar"
         android:layout_width="match_parent"
         android:layout_height="62dp"
-        android:text="Registro" />
+        android:text="Registro"
+        android:textSize="16dp"/>
 
 </LinearLayout>

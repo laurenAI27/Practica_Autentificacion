@@ -12,7 +12,7 @@
         android:id="@+id/tv_login"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:text="Datos del nuevo Contacto"
+        android:text="Pantalla de Login"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,7 +39,8 @@
         android:id="@+id/btregistlogin"
         android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:text="Registrar" />
+        android:text="Login"
+        android:textSize="16dp"/>
 
     <TextView
         android:id="@+id/tv_loginAceptado"

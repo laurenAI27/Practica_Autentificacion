@@ -27,13 +27,16 @@ private FirebaseAuth autentificado;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_usuario);
 
+        getSupportActionBar().setTitle("Firebase Lauren");
+
         mensajeLogin = findViewById(R.id.tv_loginAceptado);
         etxt_mail = findViewById(R.id.etEmailAddress);
         etxtpass = findViewById(R.id.etPassword);
 
         btn_loguear = findViewById(R.id.btregistlogin);
-
-
+        String email = etxt_mail.getText().toString();
+        String password = etxtpass.getText().toString();
+        signIn(email, password);
     }
 
     private void signIn(String email, String password) {
