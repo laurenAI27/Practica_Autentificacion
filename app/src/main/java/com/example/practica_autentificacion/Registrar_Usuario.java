@@ -36,15 +36,16 @@ public class Registrar_Usuario extends AppCompatActivity {
         etxt_mail = findViewById(R.id.etxtEmailAddress);
         etxt_password = findViewById(R.id.etxtPassword);
         tv_confirmacionUsuario = findViewById(R.id.tv_registroCofirmado);
+        autentificacion = FirebaseAuth.getInstance();
 
         btn_registro.setOnClickListener(view -> {
-            String email = etxt_mail.getText().toString();
-            String password = etxt_password.getText().toString();
-            createAccount(email, password);
+            String emailRegister = etxt_mail.getText().toString();
+            String passwordRegister = etxt_password.getText().toString();
+            createAccount(emailRegister, passwordRegister);
         });
     }
     private void createAccount(String email, String password) {
-// [START create_user_with_email]
+
         autentificacion.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                             @Override
@@ -52,7 +53,7 @@ public class Registrar_Usuario extends AppCompatActivity {
                             {
                                 if (task.isSuccessful()) {
 
-// Sign in success, update UI with the signed-in user's information
+
 
                                     Log.d(TAG, "createUserWithEmail:success");
                                     Toast.makeText(Registrar_Usuario.this, "Usuario registrado correctamente",
@@ -60,19 +61,19 @@ public class Registrar_Usuario extends AppCompatActivity {
                                     tv_confirmacionUsuario.setText("Usuario registrado correctamente");
                                             FirebaseUser user = autentificacion.getCurrentUser();
 
-//updateUI(user);
+
 
                                 } else {
-// If sign in fails, display a message to the user.
+
                                             Log.w(TAG, "createUserWithEmail:failure",
                                                     task.getException());
                                     Toast.makeText(Registrar_Usuario.this, "Usuario no registrado",
                                             Toast.LENGTH_SHORT).show();
                                     tv_confirmacionUsuario.setText("Usuario no registrado");
-//updateUI(null);
+
                                 }
                             }
                         });
-// [END create_user_with_email]
+
     }
 }

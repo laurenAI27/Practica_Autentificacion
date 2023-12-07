@@ -14,10 +14,7 @@
         android:text="Datos del nuevo Contacto"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp"  />
 
     <EditText
         android:id="@+id/etxtEmailAddress"
@@ -25,7 +22,8 @@
         android:layout_height="74dp"
         android:ems="10"
         android:hint="Ponga su email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="12dp" />
 
     <EditText
         android:id="@+id/etxtPassword"
@@ -33,18 +31,23 @@
         android:layout_height="85dp"
         android:ems="10"
         android:hint="Ponga su contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp" />
 
     <Button
         android:id="@+id/btregistro"
         android:layout_width="match_parent"
         android:layout_height="61dp"
         android:text="Registrar"
-        android:textSize="16dp"/>
+        android:textSize="22dp"
+        android:layout_marginTop="12dp" />
 
     <TextView
         android:id="@+id/tv_registroCofirmado"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:layout_marginTop="13dp"
         />
 </LinearLayout>

@@ -13,24 +13,23 @@
         android:layout_height="69dp"
         android:text="App Firebase"
         android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"  />
 
     <Button
         android:id="@+id/btlogin"
         android:layout_width="match_parent"
         android:layout_height="61dp"
         android:text="Login"
-        android:textSize="16dp"/>
+        android:textSize="22dp"
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/btregistrar"
         android:layout_width="match_parent"
         android:layout_height="62dp"
         android:text="Registro"
-        android:textSize="16dp"/>
+        android:textSize="22dp"
+        android:layout_marginTop="12dp" />
 
 </LinearLayout>

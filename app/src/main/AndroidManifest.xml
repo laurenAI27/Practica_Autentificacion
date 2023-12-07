@@ -13,12 +13,17 @@
         android:theme="@style/Theme.Practica_Autentificacion"
         tools:targetApi="31">
         <activity
-            android:name=".Registrar_Usuario"
+            android:name=".Conexion_BBDD"
             android:exported="false"
             android:parentActivityName=".Firebase_Autentificacion"/>
         <activity
+            android:name=".Registrar_Usuario"
+            android:exported="false"
+            android:parentActivityName=".Firebase_Autentificacion" />
+        <activity
             android:name=".Login_Usuario"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Firebase_Autentificacion" />
         <activity
             android:name=".Firebase_Autentificacion"
             android:exported="true"
